@@ -1,23 +1,24 @@
 <!-- 
 =============================
-EVOLVE 
+EVOLVEVR
 =============================
- -->
+-->
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>evolve</title>
-    <!--link rel="shortcut icon" href="images/avatar.png"-->
-    <link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+<title>EvolveVR</title>
+<link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+<meta name="description" content="Hello, WebVR! - A-Frame">
+<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
 </head>
 
 <body>
-    
-    <div id="page">
-        <div id="content">
-        <div id="header"><pre>
+
+<div id="page">
+	<div id="content">
+		<div id="header"><pre>
 <a class="node" href="index.html">
 
 &#215;&#215;&#215;&#215;&#215; &#215;       &#215;  &#215;&#215;&#215;&#215;   &#215;&#215;   &#215;       &#215; &#215;&#215;&#215;&#215;&#215;
@@ -29,28 +30,33 @@ EVOLVE
 </a> 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</pre>
-            </div>
-            
-            <div id="list">
-            
-            <ul>
 
-                
-                <li>
-                    <a href="sandbox.html">
-                        <span alt="highlight" class="important">&#215;</span><span class="notification"></span><span>First Sandbox Scene</span>
-                    </a>
-                </li>
+		<div id="vr_window">
+		<ul>
+		 <li>
+		   <span alt="highlight" class="important">&#215;</span>>
+		   <span class="notification"></span>
+		   <span>Simple objects scene</span>
+		 </li>
+		<ul>
+    <a-scene embedded class="aframebox">
+      <a-assets>
+      <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
+      <img id="skyTexture"
+      src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
+      </a-assets>
+      <a-box color="red" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
+      <a-sky color="#222"></a-sky>
 
-                
+    </a-scene>
 
-            </ul>
-            </div>
 
-            <div id="footer">
+
+		</div>
+		<div id="footer">
                 <pre>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</pre>
                 <div class="filter">
-                <a href="">HOME</a>
+                <a href="index.html">HOME</a>
 
                 <span class="footeritems">  &#215; </span>
                 <a href="">SHOP</a>
@@ -62,5 +68,8 @@ EVOLVE
 
         </div>
 
-</body>
-</html>
+	</body>
+	</html>
+
+
+
